@@ -184,9 +184,9 @@ const app = Vue.createApp({
         let temp1=[], temp2=[];
         let i=0, j=0, k=start;
 
-        //for(let x=start; x<=end; x++){
-        //  this.divs[x].style.backgroundColor = 'red';
-        //}
+        for(let x=start; x<=end; x++){
+          this.divs[x].style.backgroundColor = 'red';
+        }
 
         for(let p=0; p<size1; p++) temp1[p] = this.array[start+p];
         for(let q=0; q<size2; q++) temp2[q] = this.array[mid+q+1];
@@ -217,9 +217,9 @@ const app = Vue.createApp({
         }
 
         await this.sleep();
-        //for(let x=start; x<=end; x++){
-        //  this.divs[x].style.backgroundColor = 'green';
-        //}
+        for(let x=start; x<=end; x++){
+          this.divs[x].style.backgroundColor = 'green';
+        }
         console.log(...this.array);
       },
 
